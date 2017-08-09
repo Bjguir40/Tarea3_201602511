@@ -64,7 +64,7 @@ public class menu {
                             }
                             break;
                         case 3:
-                            
+                            upersonalizado();
                             break;
                        
                         case 5:
@@ -89,6 +89,32 @@ public class menu {
 
             }
         }
+        
+
     }
-}
+
+    public void upersonalizado() {
+
+        System.out.println("Mostrar un Usuario Personalizado");
+        boolean encontrado = false;
+        Scanner S = new Scanner(System.in);
+        String nombreingresado = S.nextLine();
+        int z = 0;
+        while (z < usuario.length && !encontrado) {
+            if (nombreingresado.equals(usuario[z])) {
+                System.out.println(usuario[z]);
+                encontrado = true;
+            }
+            z++;
+        }
+        if (!encontrado) {
+            System.out.println("Usuario no encontrado");
+        }
+    }
     
+         
+         }
+    
+      
+                    
+
